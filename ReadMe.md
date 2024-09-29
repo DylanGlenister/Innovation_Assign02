@@ -1,7 +1,6 @@
 # Computing Technology Innovation Project Assignment 2
 ## Machine Learning Hell
 
-
 # Weather Analysis and Prediction Using Machine Learning
 
 This project is a weather prediction model designed to provide accurate and accessible weather forecasts for cities and towns across Australia. Using historical weather data and machine learning models, it aims to deliver predictions of temperature, rainfall, humidity, and wind speed.
@@ -33,7 +32,7 @@ This project is a weather prediction model designed to provide accurate and acce
 ### Setting Up a Virtual Environment Using VS Code
 
 1. **Install the Python extension** in VS Code if you haven't already.
-   
+
 2. **Create a virtual environment**:
    ```bash
    python -m venv venv
@@ -63,7 +62,6 @@ This project is a weather prediction model designed to provide accurate and acce
 ## Data Sources
 - [Australian Weather Data](https://www.kaggle.com/datasets/manidevesh/weather-data-set-australia)
 - [Australian Weather Observation Data](https://www.kaggle.com/datasets/alcheng10/bom-weather-observation-data-select-stations)
-- [Australian Bureau of Statistics](https://www.abs.gov.au/)
 
 ## Usage
 
