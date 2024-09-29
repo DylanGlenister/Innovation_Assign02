@@ -65,20 +65,61 @@ This project is a weather prediction model designed to provide accurate and acce
 
 ## Usage
 
-1. **Preprocess the data:**
-   Ensure that all datasets are processed using the included data processing scripts. Missing values are filled in using interpolation.
-
-2. **Train the model:**
-   Use the following command to train the machine learning model:
-   ```bash
-   python train_model.py
-   ```
-
-3. **Make predictions:**
-   After training, you can run the prediction script:
-   ```bash
-   python predict.py
-   ```
+Running the entire script is as easy as clicking the '**Run All**' button at the top of the screen.  
+The scripted has been sectioned for ease of use and readability; Individual sections and blocks can be run as needed.  
+Providing your own data and requesting a prediction can be done by viewing the notes in the 'Using' section.  
+Available locations are and their hashs:  
+| Location Name | Hash |
+| ------------- | ---- |
+| **Albury** | *71933764137593* |
+| **BadgerysCreek** | *5259200152751195853701821850987* |
+| **Cobar** | *289631527282* |
+| **CoffsHarbour** | *20870169995263488321729295730* |
+| **Moree** | *332582249829* |
+| **Newcastle** | *1446157459539604302949* |
+| **NorahHead** | *1446876625935419138404* |
+| **NorfolkIsland** | *6214287813483005966275060002404* |
+| **Penrith** | *22629523177174120* |
+| **Richmond** | *5938386883828477540* |
+| **Sydney** | *91780841104761* |
+| **SydneyAirport** | *6613506588786455884295264236148* |
+| **WaggaWagga** | *412642669215945392088929* |
+| **Williamtown** | *105674394847416162962077550* |
+| **Wollongong** | *412901285343814447230567* |
+| **Canberra** | *4855283242169954913* |
+| **Tuggeranong** | *102104193191251112593682023* |
+| **MountGinini** | *93613637018046560708685417* |
+| **Ballarat** | *4783223491991331188* |
+| **Bendigo** | *18688873268340591* |
+| **Sale** | *1398893669* |
+| **MelbourneAirport** | *102877175957242481379666932542330598004* |
+| **Melbourne** | *1427707618201802272357* |
+| **Mildura** | *21789487469523553* |
+| **Nhil** | *1315465580* |
+| **Portland** | *5795977089809215076* |
+| **Watsonia** | *6296441793180232033* |
+| **Dartmoor** | *4927345311697825650* |
+| **Brisbane** | *4788005298140966501* |
+| **Cairns** | *74085659995763* |
+| **GoldCoast** | *1317747731709867160436* |
+| **Townsville** | *398734979096122321824869* |
+| **Adelaide** | *4712002626301551717* |
+| **MountGambier** | *23965091076619910740917708146* |
+| **Nuriootpa** | *1447308980326459797601* |
+| **Woomera** | *24610847341245025* |
+| **Albany** | *71933762825849* |
+| **Witchcliffe** | *105674541772571125863573093* |
+| **PearceRAAF** | *379659461565072128688454* |
+| **PerthAirport** | *24881442790602444328154395252* |
+| **Perth** | *345299383400* |
+| **SalmonGums** | *393753565276778372885875* |
+| **Walpole** | *24595441344539749* |
+| **Hobart** | *79643229123188* |
+| **Launceston** | *360697648683280118345582* |
+| **AliceSprings** | *20247587308915477085567215475* |
+| **Darwin** | *75185322944878* |
+| **Katherine** | *1390528158032114314853* |
+| **Uluru** | *366891856501* |
 
 ## Machine Learning Models
 
