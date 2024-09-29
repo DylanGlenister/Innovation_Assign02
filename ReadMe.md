@@ -1,7 +1,5 @@
 # Computing Technology Innovation Project Assignment 2
-## Machine Learning Hell
-
-# Weather Analysis and Prediction Using Machine Learning
+## Weather Analysis and Prediction Using Machine Learning
 
 This project is a weather prediction model designed to provide accurate and accessible weather forecasts for cities and towns across Australia. Using historical weather data and machine learning models, it aims to deliver predictions of temperature, rainfall, humidity, and wind speed.
 
@@ -14,48 +12,44 @@ This project is a weather prediction model designed to provide accurate and acce
 ## Installation
 
 ### Requirements
-- Python 3.x
-- Required Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `datetime`, `scikit-learn`
-
-### Installation Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/DylanGlenister/Innovation_Assign02.git
-   cd weather-analysis
-   ```
-
-2. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+- Python 3.12.x
 
 ### Setting Up a Virtual Environment Using VS Code
 
-1. **Install the Python extension** in VS Code if you haven't already.
+1. **Install required VSCode extensions**:
+- Jupyter
+- Python
+- Pylance
 
 2. **Create a virtual environment**:
-   ```bash
-   python -m venv venv
-   ```
+	```bash
+	python -m venv venv
+	```
 
 3. **Activate the virtual environment**:
-   - On **Windows**:
-     ```bash
-     .\venv\Scripts\Activate
-     ```
-   - On **macOS/Linux**:
-     ```bash
-     source venv/bin/activate
-     ```
+	- On **Windows**:
+		```bash
+		.\venv\Scripts\Activate
+		```
+	- On **macOS/Linux**:
+		```bash
+		source venv/bin/activate
+		```
+
+4. **Install required libraries**
+	```bash
+	pip install pandas numpy matplotlib seaborn scikit-learn
+	```
 
 4. **Open VS Code in your project directory**:
-   ```bash
-   code .
-   ```
+	```bash
+	code .
+	```
 
 5. **Select the Python interpreter** in VS Code:
-   - Press `Ctrl+Shift+P` and type "Python: Select Interpreter".
-   - Choose the interpreter from your virtual environment (`venv`).
+	- Open [Submission.ipynb](./Submission.ipynb).
+	- Select the button in the top right corner labelled "select kernel".
+	- Choose the interpreter from your virtual environment (`venv`).
 
 6. Now, you can run your code in the virtual environment from VS Code.
 
@@ -65,10 +59,45 @@ This project is a weather prediction model designed to provide accurate and acce
 
 ## Usage
 
-Running the entire script is as easy as clicking the '**Run All**' button at the top of the screen.  
-The scripted has been sectioned for ease of use and readability; Individual sections and blocks can be run as needed.  
-Providing your own data and requesting a prediction can be done by viewing the notes in the 'Using' section.  
-Available locations are and their hashs:  
+The notebook is split into 7 main sections:
+- Imports
+- Data Processing
+- Visualisation
+- Clustering Tests
+- Training
+- Testing
+- Using
+
+The only sections required for using the model are **Imports, Training, and Using**. These sections should be run sequentially.
+
+In order to use the model with your own data, you must provide the data as an array, this array should be as follows:  
+`[MinTemp, MaxTemp, Rainfall, WindGustSpeed, WindSpeed9am, WindSpeed3pm, Humidity9am, Humidity3pm, Pressure9am, Pressure3pm, Cloud9am, Cloud3pm, Temp9am, Temp3pm, DayIndex, Year, Month, LocationHash] * 14`
+
+The model expects 14 days worth of data, you can modify this by reprocessing the data after changing the `block_size` settings, then re-training the model.
+
+Once you have your data formatted correctly it can be used with either the linear reggression model or the ridge regression mode. It is recommended you use both to get a better understanding of the weather possibilities.
+
+### Information about the required data
+- MinTemp: The minimum temperature for the day (C).
+- MaxTemp: The maximum temperature for the day (C).
+- Rainfall: How much rain fell in the day (mm).
+- WindGustSpeed: The maximum gust speed (km/h).
+- WindSpeed9am: The rolling average wind speed at 9am (km/h).
+- WindSpeed3pm: The rolling average wind speed at 3pm (km/h).
+- Humidity9am: The air humidity at 9am (%).
+- Humidity3pm: The air humidity at 3pm (%).
+- Pressure9am: The air pressure at 9am (millibars).
+- Pressure3pm: The air pressure at 3pm (millibars).
+- Cloud9am: A rating of the amount of cloud cover at 9am (0-9).
+- Cloud3pm: A rating of the amount of cloud cover at 3pm (0-9).
+- Temp9am: The temperature at 9am (C).
+- Temp3pm: The temperature at 3pm (C).
+- DayIndex: The number of days since 01/01/2000.
+- Year: What year it is.
+- Month: What month it is a a number (1-12).
+- LocationHash: See below.
+
+Available locations are and their hashs:
 | Location Name | Hash |
 | ------------- | ---- |
 | **Albury** | *71933764137593* |
